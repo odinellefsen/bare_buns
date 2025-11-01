@@ -1,5 +1,13 @@
 {
+  "name": "random_bun",
   "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "bun build src/index.ts --outdir ./dist --target bun",
+    "start": "bun run dist/index.js",
+    "compile": "bun build --compile src/index.ts --outfile ./bin/server"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
